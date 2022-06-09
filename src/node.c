@@ -42,6 +42,15 @@ void freeNodes(NodePtr head) {
     }
 }
 
+int numNodes(NodePtr head) {
+    int nodes = 0;
+    NodePtr curr = NULL;
+    for (curr = head; curr != NULL; curr = curr->next) {
+        nodes++;
+    }
+    return nodes;
+}
+
 void addNode(NodePtr head, NodePtr node) {
     assert(head != NULL);
     assert(node != NULL);
